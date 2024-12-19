@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Page Header */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+/* Order Summary */
+.order-summary {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.order-summary h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.order-table th,
+.order-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.total-row {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+/* Shipping Form */
+.shipping-form {
+    margin-top: 30px;
+}
+
+.shipping-form h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Payment Method Section */
+.payment-method {
+    margin-top: 30px;
+}
+
+.payment-method h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.payment-options {
+    margin-top: 15px;
+}
+
+.payment-options h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.payment-methods label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.payment-methods input {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit-btn .btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn .btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    .order-summary h2 {
+        font-size: 1.4rem;
+    }
+}

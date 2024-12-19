@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh & Organic | Organic Farming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #a8e063, #56ab2f); /* Fresh Green gradient */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.9); /* Slight white background for readability */
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #56ab2f;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Intro Section */
+        .intro-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-section img {
+            max-width: 50%;
+            border-radius: 8px;
+        }
+
+        .intro-section .text-content {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .intro-section .text-content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .intro-section .text-content p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefits-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #56ab2f;
+            margin-bottom: 30px;
+        }
+
+        .benefit-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-item img {
+            max-width: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .benefit-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .benefit-info h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .benefit-info p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* User Selection Section */
+        .selection-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .selection-section h2 {
+            font-size: 2rem;
+            color: #56ab2f;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .selection-section select, .selection-section input {
+            padding: 12px;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            display: block;
+            width: 100%;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-top: 40px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .intro-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro-section img {
+                max-width: 80%;
+            }
+
+            .benefit-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .benefit-info {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+
+            .benefit-item img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Organic Farming Store</h1>
+        <p>Embrace a sustainable and healthy lifestyle with our organic farming practices. Discover the true benefits of eating fresh and organic.</p>
+    </header>
+
+
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <h2>The Benefits of Organic Farming</h2>
+
+        <div class="benefit-item">
+            <img src="https://media.licdn.com/dms/image/D5612AQFfLQGdn8xbpw/article-cover_image-shrink_720_1280/0/1694575490470?e=2147483647&v=beta&t=0Y9IAdIeuaR8Z_TIUxKBofsDMVX3Mdxs9q9VnKLWNgY" alt="Environmental Benefits">
+            <div class="benefit-info">
+                <h3>Environmental Sustainability</h3>
+                <p>Organic farming promotes biodiversity, helps conserve water, reduces pollution, and minimizes soil erosion. It also improves soil health, making it a key factor in combating climate change.</p>
+            </div>
+        </div>
+
+        <div class="benefit-item">
+            <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYlnN-KWDUHvBhCGl8bFxO0XetIzEAZpL_g&s" alt="Health Benefits">
+            <div class="benefit-info">
+                <h3>Healthier for You</h3>
+                <p>Organic foods are free from harmful chemicals, pesticides, and fertilizers. Eating organic promotes better health, as it is packed with more vitamins, minerals, and antioxidants.</p>
+            </div>
+        </div>
+
+        <div class="benefit-item">
+            <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6tdqc_pLTZr-GIJTmR-WJKGqHes7Y7d5W1Q&s" alt="Freshness">
+            <div class="benefit-info">
+                <h3>Fresher, Tastier Produce</h3>
+                <p>Fresh organic produce is grown without synthetic chemicals, allowing it to retain more of its natural flavors, nutrients, and freshness. The result is more delicious and nutritious food.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Selection Section -->
+    <section class="selection-section">
+        <h2>Choose Your Organic Farming Preference</h2>
+        
+        <!-- Packaging Selection -->
+        <label for="packaging-options">Select Your Preferred Packaging Type:</label>
+        <select id="packaging-options">
+            <option value="eco-friendly-paper">Eco-Friendly Paper Packaging</option>
+            <option value="biodegradable">Biodegradable Packaging</option>
+            <option value="glass-bottles">Recyclable Glass Bottles</option>
+            <option value="compostable">Compostable Packaging</option>
+        </select>
+
+        <!-- Farming Methods Selection -->
+        <label for="farming-methods">Select Your Preferred Farming Method:</label>
+        <select id="farming-methods">
+            <option value="sustainable">Sustainable Farming</option>
+            <option value="regenerative">Regenerative Farming</option>
+            <option value="permaculture">Permaculture</option>
+        </select>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Organic Farming Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

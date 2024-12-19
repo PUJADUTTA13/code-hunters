@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method | Organic Farming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+        }
+        .payment-method {
+            margin-top: 30px;
+        }
+        .payment-method label {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .payment-method input[type="radio"] {
+            margin-right: 10px;
+        }
+        .payment-method .details {
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        .payment-method .details a {
+            font-size: 1rem;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+        .btn-submit {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .btn-submit button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Payment Page Section -->
+    <section>
+        <h1>Select Payment Method</h1>
+        <p style="text-align: center; color: #666;">Choose a payment method to complete your purchase.</p>
+
+        <!-- Payment Methods Section -->
+        <div class="payment-method">
+            <!-- Credit Card Payment -->
+            <div>
+                <label>
+                    <input type="radio" name="payment-method" value="credit-card" checked />
+                    <i class="fa fa-credit-card" style="margin-right: 10px;"></i>
+                    <span>Credit / Debit Card</span>
+                </label>
+                <div class="details">
+                    <p>Use your credit or debit card to pay securely via our trusted payment gateway providers like <a href="https://www.razorpay.com" target="_blank">Razorpay</a> or <a href="https://www.paytm.com" target="_blank">Paytm Payment Gateway</a>.</p>
+                </div>
+            </div>
+
+            <!-- Net Banking Payment -->
+            <div>
+                <label>
+                    <input type="radio" name="payment-method" value="net-banking" />
+                    <i class="fa fa-university" style="margin-right: 10px;"></i>
+                    <span>Net Banking</span>
+                </label>
+                <div class="details">
+                    <p>Choose from popular net banking options like HDFC, ICICI, SBI, Axis Bank, and more.</p>
+                    <a href="https://www.icicibank.com" target="_blank">ICICI Net Banking</a>
+                    <a href="https://www.sbi.co.in" target="_blank">SBI Net Banking</a>
+                    <a href="https://www.hdfcbank.com" target="_blank">HDFC Net Banking</a>
+                </div>
+            </div>
+
+            <!-- UPI Payment -->
+            <div>
+                <label>
+                    <input type="radio" name="payment-method" value="upi" />
+                    <i class="fa fa-mobile-alt" style="margin-right: 10px;"></i>
+                    <span>UPI Payment (Google Pay, PhonePe, etc.)</span>
+                </label>
+                <div class="details">
+                    <p>Use UPI apps like Google Pay, PhonePe, Paytm, etc., to make a quick payment using your UPI ID.</p>
+                    <a href="https://pay.google.com" target="_blank">Google Pay</a>
+                    <a href="https://www.phonepe.com" target="_blank">PhonePe</a>
+                    <a href="https://paytm.com" target="_blank">Paytm UPI</a>
+                </div>
+            </div>
+
+            <!-- Wallets Payment -->
+            <div>
+                <label>
+                    <input type="radio" name="payment-method" value="wallets" />
+                    <i class="fa fa-wallet" style="margin-right: 10px;"></i>
+                    <span>Payment via Wallets (Paytm, Amazon Pay, etc.)</span>
+                </label>
+                <div class="details">
+                    <p>Pay using wallets like Paytm, Amazon Pay, PhonePe, or any other integrated wallet service.</p>
+                    <a href="https://paytm.com" target="_blank">Paytm Wallet</a>
+                    <a href="https://www.amazon.in/amazonpay" target="_blank">Amazon Pay</a>
+                    <a href="https://www.phonepe.com" target="_blank">PhonePe</a>
+                </div>
+            </div>
+
+            <!-- Cash on Delivery -->
+            <div>
+                <label>
+                    <input type="radio" name="payment-method" value="cod" />
+                    <i class="fa fa-money-bill-wave" style="margin-right: 10px;"></i>
+                    <span>Cash on Delivery (COD)</span>
+                </label>
+                <div class="details">
+                    <p>Pay with cash when your products are delivered to your address. Simply choose this option for a convenient offline payment method.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Payment Form -->
+        <div class="btn-submit">
+            <button type="submit">Proceed to Payment</button>
+        </div>
+    </section>
+
+</body>
+</html>
