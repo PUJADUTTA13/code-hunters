@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables | Organic Farming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #a8e063, #56ab2f); /* Fresh Green gradient */
+            margin: 0;
+            padding: 0;
+            color: #b8ee75;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #56ab2f;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .vegetable-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .vegetable-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .vegetable-item:hover {
+            transform: scale(1.05);
+        }
+
+        .vegetable-item img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .vegetable-item h3 {
+            font-size: 1.6rem;
+            color: #56ab2f;
+            margin-bottom: 15px;
+        }
+
+        .vegetable-item p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .vegetable-item .buy-options {
+            margin-top: 15px;
+        }
+
+        .vegetable-item select, .vegetable-item input {
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 100%;
+        }
+
+        .vegetable-item .btn {
+            background-color: #56ab2f;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .vegetable-item .btn:hover {
+            background-color: #4c9e2d;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-top: 40px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .vegetable-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Organic Vegetables</h1>
+        <p>Fresh, healthy, and organic vegetables straight from the farm to your table. Choose your favorites!</p>
+    </header>
+
+    <!-- Vegetables List -->
+    <div class="vegetable-list">
+        <!-- Vegetable Item 1 -->
+        <div class="vegetable-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYDYm6lWR1wgBRoeoTMgRVJgNdohKuQxvxlg&s" alt="Carrot">
+            <h3>Carrot</h3>
+            <p>Rich in vitamins, carrots are a great source of beta-carotene and fiber. Perfect for juices, salads, or snacking!</p>
+            <div class="buy-options">
+                <label for="carrot-quantity">Quantity (kg):</label>
+                <input type="number" id="carrot-quantity" name="carrot-quantity" min="1" max="10" value="1">
+                <label for="carrot-price-range">Price Range:</label>
+                <select id="carrot-price-range">
+                    <option value="low">Low: $2 - $5</option>
+                    <option value="medium">Medium: $5 - $10</option>
+                    <option value="high">High: $10+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Vegetable Item 2 -->
+        <div class="vegetable-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg2_p9TzLp_6R85TiGPyNmpoHCMIbAijNqnA&s" alt="Spinach">
+            <h3>Spinach</h3>
+            <p>Spinach is loaded with nutrients like iron, calcium, and vitamins. Great for salads, smoothies, or cooking!</p>
+            <div class="buy-options">
+                <label for="spinach-quantity">Quantity (kg):</label>
+                <input type="number" id="spinach-quantity" name="spinach-quantity" min="1" max="10" value="1">
+                <label for="spinach-price-range">Price Range:</label>
+                <select id="spinach-price-range">
+                    <option value="low">Low: $3 - $7</option>
+                    <option value="medium">Medium: $7 - $12</option>
+                    <option value="high">High: $12+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Vegetable Item 3 -->
+        <div class="vegetable-item">
+            <img src="https://t4.ftcdn.net/jpg/05/25/88/45/360_F_525884576_jvbcE9nGxp28fXsBkhzBbhsgLdpHQTNT.jpg" alt="Tomato">
+            <h3>Tomato</h3>
+            <p>Tomatoes are a great source of antioxidants, such as lycopene, and provide many health benefits!</p>
+            <div class="buy-options">
+                <label for="tomato-quantity">Quantity (kg):</label>
+                <input type="number" id="tomato-quantity" name="tomato-quantity" min="1" max="10" value="1">
+                <label for="tomato-price-range">Price Range:</label>
+                <select id="tomato-price-range">
+                    <option value="low">Low: $2 - $5</option>
+                    <option value="medium">Medium: $5 - $10</option>
+                    <option value="high">High: $10+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Vegetable Item 4 -->
+        <div class="vegetable-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYI166z_YBsemmgBewcSHA6ImeDGNtUFdOvA&s" alt="Cucumber">
+            <h3>Cucumber</h3>
+            <p>Refreshing and hydrating, cucumbers are rich in vitamins and minerals. Perfect for fresh salads or pickles.</p>
+            <div class="buy-options">
+                <label for="cucumber-quantity">Quantity (kg):</label>
+                <input type="number" id="cucumber-quantity" name="cucumber-quantity" min="1" max="10" value="1">
+                <label for="cucumber-price-range">Price Range:</label>
+                <select id="cucumber-price-range">
+                    <option value="low">Low: $1 - $4</option>
+                    <option value="medium">Medium: $4 - $8</option>
+                    <option value="high">High: $8+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="vegetable-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6-iQGaCBvhGJrrcWWcJNZX5PYlmdUtx_RdA&s" alt="Cucumber">
+            <h3>Latus</h3>
+            <p>Refreshing and hydrating, latus are rich in vitamins and minerals. Perfect for fresh salads or pickles.</p>
+            <div class="buy-options">
+                <label for="cucumber-quantity">Quantity (kg):</label>
+                <input type="number" id="cucumber-quantity" name="cucumber-quantity" min="1" max="10" value="1">
+                <label for="cucumber-price-range">Price Range:</label>
+                <select id="cucumber-price-range">
+                    <option value="low">Low: $1 - $4</option>
+                    <option value="medium">Medium: $4 - $8</option>
+                    <option value="high">High: $8+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <!-- Add more vegetables as required, following the same structure -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Organic Farming Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

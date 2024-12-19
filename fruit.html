@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits | Organic Farming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffcccb, #ff6f61); /* Fresh Fruit gradient */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .fruit-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .fruit-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .fruit-item:hover {
+            transform: scale(1.05);
+        }
+
+        .fruit-item img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .fruit-item h3 {
+            font-size: 1.6rem;
+            color: #ff6f61;
+            margin-bottom: 15px;
+        }
+
+        .fruit-item p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .fruit-item .buy-options {
+            margin-top: 15px;
+        }
+
+        .fruit-item select, .fruit-item input {
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 100%;
+        }
+
+        .fruit-item .btn {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .fruit-item .btn:hover {
+            background-color: #e55d4e;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-top: 40px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fruit-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Organic Fruits</h1>
+        <p>Fresh, healthy, and organic fruits directly from the farm to your table. Choose your favorite fruits!</p>
+    </header>
+
+    <!-- Fruits List -->
+    <div class="fruit-list">
+        <!-- Fruit Item 1 -->
+        <div class="fruit-item">
+            <img src="https://cdn.britannica.com/22/187222-050-07B17FB6/apples-on-a-tree-branch.jpg" alt="Apple">
+            <h3>Apple</h3>
+            <p>Apples are delicious, nutritious, and versatile. A great snack or ingredient for many recipes!</p>
+            <div class="buy-options">
+                <label for="apple-quantity">Quantity (kg):</label>
+                <input type="number" id="apple-quantity" name="apple-quantity" min="1" max="10" value="1">
+                <label for="apple-price-range">Price Range:</label>
+                <select id="apple-price-range">
+                    <option value="low">Low: $3 - $7</option>
+                    <option value="medium">Medium: $7 - $12</option>
+                    <option value="high">High: $12+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Fruit Item 2 -->
+        <div class="fruit-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAiE9BZy3SyV4Xb83a3V-e8Ywq6z1bVZlGsA&s" alt="Banana">
+            <h3>Banana</h3>
+            <p>Bananas are rich in potassium and fiber, making them a healthy and filling snack!</p>
+            <div class="buy-options">
+                <label for="banana-quantity">Quantity (kg):</label>
+                <input type="number" id="banana-quantity" name="banana-quantity" min="1" max="10" value="1">
+                <label for="banana-price-range">Price Range:</label>
+                <select id="banana-price-range">
+                    <option value="low">Low: $2 - $5</option>
+                    <option value="medium">Medium: $5 - $9</option>
+                    <option value="high">High: $9+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Fruit Item 3 -->
+        <div class="fruit-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTswy7bPf_KA5fQqpY-_ISYijapenIIs37qw&s" alt="Orange">
+            <h3>Orange</h3>
+            <p>Oranges are packed with vitamin C and make a refreshing snack or juice.</p>
+            <div class="buy-options">
+                <label for="orange-quantity">Quantity (kg):</label>
+                <input type="number" id="orange-quantity" name="orange-quantity" min="1" max="10" value="1">
+                <label for="orange-price-range">Price Range:</label>
+                <select id="orange-price-range">
+                    <option value="low">Low: $4 - $8</option>
+                    <option value="medium">Medium: $8 - $12</option>
+                    <option value="high">High: $12+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Fruit Item 4 -->
+        <div class="fruit-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWbyE0J8E6XLzTvD8t8XsLQDVIZ9FPKtmxA&s" alt="Strawberry">
+            <h3>Strawberry</h3>
+            <p>Sweet, juicy, and rich in antioxidants, strawberries are perfect for desserts or smoothies.</p>
+            <div class="buy-options">
+                <label for="strawberry-quantity">Quantity (kg):</label>
+                <input type="number" id="strawberry-quantity" name="strawberry-quantity" min="1" max="10" value="1">
+                <label for="strawberry-price-range">Price Range:</label>
+                <select id="strawberry-price-range">
+                    <option value="low">Low: $5 - $10</option>
+                    <option value="medium">Medium: $10 - $15</option>
+                    <option value="high">High: $15+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="fruit-item">
+            <img src="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg" alt="Strawberry">
+            <h3>Kiwi</h3>
+            <p>Sweet, juicy, and rich in antioxidants, strawberries are perfect for desserts or smoothies.</p>
+            <div class="buy-options">
+                <label for="strawberry-quantity">Quantity (kg):</label>
+                <input type="number" id="strawberry-quantity" name="strawberry-quantity" min="1" max="10" value="1">
+                <label for="strawberry-price-range">Price Range:</label>
+                <select id="strawberry-price-range">
+                    <option value="low">Low: $5 - $10</option>
+                    <option value="medium">Medium: $10 - $15</option>
+                    <option value="high">High: $15+</option>
+                </select>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Add more fruit items as required, following the same structure -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Organic Farming Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
