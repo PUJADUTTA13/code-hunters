@@ -157,7 +157,9 @@ padding: 2rem 9%;
   border-radius: .5rem;
   transition: right 0.4s linear;
 }
-
+#menu-btn{
+  display: none;
+}
 .header .search-form.active,
 .header .shopping-cart.active,
 .header .login-form.active {
@@ -896,5 +898,24 @@ body {
 
   .submit-btn .btn {
       padding: 10px 25px;
+  }
+  .header .navbar{
+    position: absolute;
+    top: 110%;
+    right: -110%rem;
+    width: 25rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+   
+  }
+  .header .navbar a {
+    font-size: 1.8rem;
+    margin: .8rem 2.6rem;
+    display: block;
+    color: var(--black);
+  }
+  #menu-btn{
+    display: inline-block;
   }
 }
